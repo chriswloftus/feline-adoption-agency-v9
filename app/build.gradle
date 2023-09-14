@@ -98,10 +98,6 @@ dependencies {
     // ViewModels
     implementation 'androidx.lifecycle:lifecycle-viewmodel-compose'
 
-    // Coroutines
-    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.1'
-    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.1'
-
     // Glide for Compose
     implementation 'com.github.bumptech.glide:compose:1.0.0-alpha.1'
 
