@@ -7,19 +7,19 @@ import java.time.LocalDateTime
 @Dao
 interface CatDao {
     @Insert
-    suspend fun insertSingleCat(cat: Cat)
+    fun insertSingleCat(cat: Cat)
 
     @Insert
-    suspend fun insertMultipleCats(catsList: List<Cat>)
+    fun insertMultipleCats(catsList: List<Cat>)
 
     @Update
-    suspend fun updateCat(cat: Cat)
+    fun updateCat(cat: Cat)
 
     @Delete
-    suspend fun deleteCat(cat: Cat)
+    fun deleteCat(cat: Cat)
 
     @Query("DELETE FROM cats")
-    suspend fun deleteAll()
+    fun deleteAll()
 
     @Query("SELECT * FROM cats")
     fun getAllCats(): LiveData<List<Cat>>

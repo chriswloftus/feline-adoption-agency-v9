@@ -8,11 +8,11 @@ import java.time.LocalDateTime
 class FaaRepository(application: Application) {
     private val catDao = FaaRoomDatabase.getDatabase(application)!!.catDao()
 
-    suspend fun insert(cat: Cat){
+    fun insert(cat: Cat){
         catDao.insertSingleCat(cat)
     }
 
-    suspend fun insertMultipleCats(cats: List<Cat>){
+    fun insertMultipleCats(cats: List<Cat>){
         catDao.insertMultipleCats(cats)
     }
 

@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    package="uk.ac.aber.dcs.cs31620.faa">
+    xmlns:tools="http://schemas.android.com/tools">
 
     <!-- If the app is on Google Play then we can say that it should
    only be seen by devices that have a camera (most of them but...)-->
@@ -27,7 +26,6 @@
         <activity
             android:name=".MainActivity"
             android:exported="true"
-            android:label="@string/app_name"
             android:theme="@style/Theme.FAA">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
