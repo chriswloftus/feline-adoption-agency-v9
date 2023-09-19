@@ -54,7 +54,7 @@ abstract class FaaRoomDatabase : RoomDatabase() {
             }
         }
 
-        private suspend fun populateDatabase(context: Context, instance: FaaRoomDatabase) {
+        private fun populateDatabase(context: Context, instance: FaaRoomDatabase) {
             val upToOneYear = LocalDateTime.now().minusDays(365 / 2)
             val from1to2Years = LocalDateTime.now().minusDays(365 + (36 / 2))
             val from2to5Years = LocalDateTime.now().minusDays(365 * 3)
