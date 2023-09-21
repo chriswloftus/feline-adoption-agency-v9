@@ -99,8 +99,8 @@ dependencies {
     implementation 'androidx.lifecycle:lifecycle-viewmodel-compose'
 
     // Glide for Compose
-    implementation 'com.github.bumptech.glide:compose:1.0.0-alpha.1'
+    implementation 'com.github.bumptech.glide:compose:1.0.0-alpha.3'
 
     // Date and time library
-    implementation 'io.github.vanpra.compose-material-dialogs:datetime:0.8.1-rc'
+    implementation 'io.github.vanpra.compose-material-dialogs:datetime:0.9.0'
 }
